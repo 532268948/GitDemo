@@ -22,6 +22,7 @@ public class DirectionActivity extends AppCompatActivity implements SensorEventL
 
         mSensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);
         mTextView = findViewById(R.id.text);
+        mTextView.setTextColor(getResources().getColor(R.color.colorAccent));
     }
 
     @Override
