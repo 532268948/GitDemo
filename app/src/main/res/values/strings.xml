@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">GitDemo</string>
     <string name="bluetooth_name">蓝牙</string>
+    <string name="direction_name">方向传感器</string>
 </resources>

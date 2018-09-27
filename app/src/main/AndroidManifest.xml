@@ -18,6 +18,8 @@
         </activity>
         <activity android:name=".bluetooth.BlueToothActivity">
         </activity>
+        <activity android:name=".direction.DirectionActivity">
+        </activity>
     </application>
 
 </manifest>

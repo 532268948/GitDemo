@@ -7,10 +7,11 @@ import android.view.View;
 import android.widget.Button;
 
 import com.zust.gitdemo.bluetooth.BlueToothActivity;
+import com.zust.gitdemo.direction.DirectionActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private Button mButton1;
+    private Button mButton1, mButton2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +20,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         mButton1 = findViewById(R.id.btn1);
         mButton1.setOnClickListener(this);
+        mButton2 = findViewById(R.id.direction);
+        mButton2.setOnClickListener(this);
 
     }
 
@@ -28,6 +31,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (id) {
             case R.id.btn1:
                 startActivity(new Intent(this, BlueToothActivity.class));
+                break;
+            case R.id.direction:
+                startActivity(new Intent(this, DirectionActivity.class));
                 break;
             default:
                 break;
